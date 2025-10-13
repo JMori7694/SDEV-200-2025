@@ -1,0 +1,42 @@
+{
+	"java.project.sourcePaths": [
+		".",
+
+		"M01/Ch 1/Program Exercise 7",
+		"M01/Ch 1/You Do It",
+		"M01/Ch 2/Programming Exercise 8",
+		"M01/Ch 2/You Do It",
+
+		"M02/Ch 3/Programming Exercises",
+		"M02/Ch 3/You Do It",
+		"M02/Ch 4/Programming Exercises",
+		"M02/Ch 4/You Do It",
+
+		"M03/Ch 5/You Do It",
+		"M03/Ch 6/You Do It",
+
+		"M04/Ch 4/Programming Exercise 5",
+		"M04/Ch 7/You Do It",
+		"M04/Ch 8/You Do It",
+
+		"M05/Ch 9/You Do It/1st Part",
+		"M05/Ch 9/You Do It/2nd Part",
+		"M05/Ch 9/Programming Exercise 8",
+
+		"M06/Ch 10/You Do It",
+		"M06/Ch 11/You Do It",
+
+		"M07/Ch 12/You Do It",
+		"M07/Ch 13/You Do It",
+
+		"M08/Ch 14/You Do It",
+
+		"Project"
+	],
+	"java.project.referencedLibraries": [],
+	"[java]": {
+		"editor.insertSpaces": false,
+		"editor.detectIndentation": false
+	},
+	"java.format.settings.url": "~/.vscode/eclipse-java-google-stylesheet.xml"
+}
