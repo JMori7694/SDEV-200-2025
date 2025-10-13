@@ -1,6 +1,6 @@
 /* Chapter 7 pgs 250-253
  * You Do It: Using String Methods
- * 
+ *
  * Written by: Jei
  * Date: 9/22/2025
  */
@@ -8,34 +8,36 @@
 import javax.swing.*;
 
 public class repairName {
-    public static void main(String[] args) {
-        String name, saveOriginalName;
-        int stringLength;
-        int i;
-        char c;
-        name = JOptionPane.showInputDialog(null, 
-            "Please enter your first and last name");
-        saveOriginalName = name;
-        stringLength = name.length();
 
-        for(i = 0; i < stringLength; i++) {
-            c = name.charAt(i);
-            if(i == 0) {
-                c = Character.toUpperCase(c);
-                name = c + name.substring(1, stringLength);
-            }
-            else {
-                if(name.charAt(i) == ' ') {
-                    ++i;
-                    c = name.charAt(i);
-                    c = Character.toUpperCase(c);
-                    name.substring(i + 1, stringLength);
-                }
-            }
-        }
+  public static void main(String[] args) {
+    String name, saveOriginalName;
+    int stringLength;
+    int i;
+    char c;
+    name =
+      JOptionPane.showInputDialog(
+        null,
+        "Please enter your first and last name"
+      );
+    saveOriginalName = name;
+    stringLength = name.length();
 
-        JOptionPane.showMessageDialog(null, 
-            "Original name was " + saveOriginalName + "\nRepaired name is "
-            + name);
+    for (i = 0; i < stringLength; i++) {
+      c = name.charAt(i);
+      if (i == 0) {
+        c = Character.toUpperCase(c);
+        name = c + name.substring(1, stringLength);
+      } else if (name.charAt(i) == ' ') {
+        ++i;
+        c = name.charAt(i);
+        c = Character.toUpperCase(c);
+        name = name.substring(0, i) + c + name.substring(i + 1, stringLength);
+      }
     }
+
+    JOptionPane.showMessageDialog(
+      null,
+      "Original name was " + saveOriginalName + "\nRepaired name is " + name
+    );
+  }
 }
